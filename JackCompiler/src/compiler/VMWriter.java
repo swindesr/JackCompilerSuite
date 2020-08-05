@@ -18,12 +18,12 @@ public class VMWriter {
     }
 
     public void writePush(String seg, int index) {
-        if (seg.equals("field")) { seg = "this"; }
+        if (seg.equals("field")) seg = "this";
         write("push " + seg + " " + index);
     }
 
     public void writePop(String seg, int index) {
-        if (seg.equals("field")) { seg = "this"; }
+        if (seg.equals("field")) seg = "this";
         write("pop " + seg + " " + index);
     }
 

@@ -37,6 +37,8 @@ public class SymbolTable {
                 subroutineTable.put(name, new Symbol(type, "local", varCount));
                 varCount++;
                 break;
+            default:
+                break;
         }
     }
 

@@ -53,7 +53,7 @@ public class CompilationEngine {
             varDecWithSymbols();
 
             // retrieve ; symbol ending current set of declarations
-            compiledTokens.add( tokens.poll());
+            compiledTokens.add(tokens.poll());
 
             next = getNextTokenValue();
         }
@@ -92,12 +92,12 @@ public class CompilationEngine {
         // add each token in parameter list, halting at )
         String next = getNextTokenValue();
         while (!next.equals(")")) {
-            if (next.equals(",")) { compiledTokens.add(tokens.poll()); }
+            if (next.equals(",")) compiledTokens.add(tokens.poll());
             String type = getNextTokenValue();
             compiledTokens.add(tokens.poll());
 
             symbolTable.define(getNextTokenValue(), type, "arg");
-            compiledTokens.add( tokens.poll());
+            compiledTokens.add(tokens.poll());
             next = getNextTokenValue();
         }
 
@@ -152,7 +152,7 @@ public class CompilationEngine {
                 || next.equals("do")
                 || next.equals("return")) {
 
-            switch(next) {
+            switch (next) {
                 case "let":     compileLet();
                                 break;
                 case "if":      compileIf();
@@ -163,6 +163,7 @@ public class CompilationEngine {
                                 break;
                 case "return":  compileReturn();
                                 break;
+                default:        break;
             }
 
             next = getNextTokenValue();
@@ -282,7 +283,7 @@ public class CompilationEngine {
         // add statements
         compileStatements();
         writer.writeGoto("WHILE_EXP" + id);
-        writer.writeLabel("WHILE_END" +id);
+        writer.writeLabel("WHILE_END" + id);
 
         // add } symbol
         compiledTokens.add(tokens.poll());
@@ -383,7 +384,7 @@ public class CompilationEngine {
                 compiledTokens.add(tokens.poll()); // (
                 compileExpressionList();
                 compiledTokens.add(tokens.poll()); // )
-            } else if (next != null && next.value.equals(".")){ // subroutineCall name.###
+            } else if (next != null && next.value.equals(".")) { // subroutineCall name.###
                 compiledTokens.add(tokens.poll()); // .
                 if (symbolTable.contains(name)) {
                     writer.writePush(symbolTable.kindOf(name), symbolTable.indexOf(name));
@@ -415,7 +416,7 @@ public class CompilationEngine {
             compileTerm();
             writer.writeArithmetic("~");
         } else if (next != null && next.type == TokenType.KEYWORD) {
-            switch(next.value) {
+            switch (next.value) {
                 case "true":    writer.writePush("constant", 1);
                                 writer.writeArithmetic("~");
                                 break;
@@ -425,6 +426,7 @@ public class CompilationEngine {
                                 break;
                 case "this":    writer.writePush("pointer", 0);
                                 break;
+                default:        break;
             }
             compiledTokens.add(tokens.poll());
         } else {
@@ -450,7 +452,7 @@ public class CompilationEngine {
         String next = getNextTokenValue();
         int numArgs = 0;
         while (!next.equals(")")) {
-            if (numArgs > 0) { compiledTokens.add(tokens.poll()); }
+            if (numArgs > 0) compiledTokens.add(tokens.poll());
             compileExpression();
             numArgs++;
             next = getNextTokenValue();

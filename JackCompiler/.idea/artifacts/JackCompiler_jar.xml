@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JackCompiler:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JackCompiler_jar</output-path>
+    <root id="archive" name="JackCompiler.jar">
+      <element id="module-output" name="JackCompiler" />
+    </root>
+  </artifact>
+</component>

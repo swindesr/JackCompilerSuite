@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JackCompiler:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="27260e08-6f91-41bb-81ff-73a04b38ad75" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
@@ -42,6 +47,7 @@
     <configuration name="JackCompiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JackCompiler" />
       <module name="JackCompiler" />
+      <option name="PROGRAM_PARAMETERS" value="ConvertToBin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -70,14 +76,18 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="315" y="104" key="#Project_Structure/0.23.1440.823@0.23.1440.823" timestamp="1590082994724" />
-    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596602376030">
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596647366392">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1596602376030" />
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1596647366392" />
     <state x="458" y="223" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1596643715773">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="458" y="223" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1440.826@0.23.1440.826" timestamp="1596643715773" />
+    <state x="458" y="230" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596647623101">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="458" y="230" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.826@0.23.1440.826" timestamp="1596647623101" />
     <state x="492" y="325" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596643551846">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -94,22 +104,26 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="478" y="150" key="#xdebugger.evaluate/0.23.1440.823@0.23.1440.823" timestamp="1590079893166" />
-    <state width="1379" height="207" key="GridCell.Tab.0.bottom" timestamp="1590430357041">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1419" height="213" key="GridCell.Tab.0.bottom" timestamp="1596648125268">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1379" height="207" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1590430357041" />
-    <state width="1379" height="207" key="GridCell.Tab.0.center" timestamp="1590430357041">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1419" height="213" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1596648125268" />
+    <state width="1419" height="213" key="GridCell.Tab.0.center" timestamp="1596648125267">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1379" height="207" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1590430357041" />
-    <state width="1379" height="207" key="GridCell.Tab.0.left" timestamp="1590430357040">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1419" height="213" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1596648125267" />
+    <state width="1419" height="213" key="GridCell.Tab.0.left" timestamp="1596648125266">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1379" height="207" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1590430357040" />
-    <state width="1379" height="207" key="GridCell.Tab.0.right" timestamp="1590430357041">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1419" height="213" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1596648125266" />
+    <state width="1419" height="213" key="GridCell.Tab.0.right" timestamp="1596648125268">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1379" height="207" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1590430357041" />
+    <state width="1419" height="213" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1596648125268" />
     <state width="1379" height="257" key="GridCell.Tab.1.bottom" timestamp="1590430357028">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -126,6 +140,10 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1379" height="257" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1590430357028" />
+    <state x="208" y="23" width="1024" height="826" key="SettingsEditor" timestamp="1596647645401">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="208" y="23" width="1024" height="826" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1596647645401" />
     <state x="380" y="170" width="670" height="676" key="search.everywhere.popup" timestamp="1590085777610">
       <screen x="0" y="23" width="1440" height="823" />
     </state>

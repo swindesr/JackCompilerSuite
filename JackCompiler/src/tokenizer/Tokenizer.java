@@ -35,6 +35,7 @@ public class Tokenizer {
                 }
                 tokenCursor = 0;
             }
+            reader.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
@@ -45,7 +46,7 @@ public class Tokenizer {
     private void trimAndRemoveComments() {
         currentLine = currentLine.trim();
 
-        if (currentLine.startsWith("/*")) { inBlockComment = true; }
+        if (currentLine.startsWith("/*")) inBlockComment = true;
 
         int commentIndex = currentLine.indexOf("//");
         if (commentIndex != -1) {
@@ -98,8 +99,9 @@ public class Tokenizer {
         } else if (SYMBOLS.contains(currentToken.charAt(0))) {
             type = TokenType.SYMBOL;
         } else if (Character.isDigit(currentToken.charAt(0))) {
-            if (Integer.parseInt(currentToken) >= 0 && Integer.parseInt(currentToken) <= 32767)
+            if (Integer.parseInt(currentToken) >= 0 && Integer.parseInt(currentToken) <= 32767) {
                 type = TokenType.INT_CONST;
+            }
         } else if (currentToken.startsWith("\"")
                     && currentToken.endsWith("\"")
                     && !currentToken.contains("\n")
@@ -140,6 +142,7 @@ public class Tokenizer {
                         break;
             case "&":   currentToken = "&amp;";
                         break;
+            default:    break;
         }
         return currentToken;
     }
