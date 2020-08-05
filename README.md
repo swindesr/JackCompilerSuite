@@ -10,20 +10,20 @@ In other words, when combined, these programs will work to compile a `.jack` fil
 ![Image of Overview](images/overview-1.png)
 
 ## HOW TO RUN
-##### All-in-one
+#### All-in-one
 To run through the entire process in one command: use the TODO HERE
 
-##### Jack Compiler
+#### Jack Compiler
 To compile `.jack` files to `.vm` files, navigate to the JackCompiler folder within the terminal. From there run the command: 
 
 `java -jar JackCompiler.jar "FOLDER_NAME_HERE"`
 
 The folders "ConvertToBin", "ComplexArrays", "Pong" are included in the JackCompiler directory as test cases for demonstration.
 
-##### VM Translator
+#### VM Translator
 To run through the VM TRANSLATOR: use the TODO HERE
 
-##### Hack Assembler
+#### Hack Assembler
 To run through the HACK ASSEMBLER: use the TODO HERE
 
 ### DISCLAIMER!
