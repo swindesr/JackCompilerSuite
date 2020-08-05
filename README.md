@@ -7,7 +7,7 @@ Within, you will find 3 separate directories each containing one program respons
 
 In other words, when combined, these programs will work to compile a `.jack` file into a `.hack` file. These file types are specified by Noam Nissan and Shimon Schocken as part of the Nand2Tetris self-guided course found at www.nand2tetris.org/course. Jack is a Java-like language, and the resulting bytecode produced by this process is designed to work on a custom-built CPU architecture.  
 
-![Image of Overview]( )
+![Image of Overview](images/overview-1.png)
 
 ## HOW TO RUN
 Todo
@@ -20,13 +20,13 @@ Jack is a general-purpose programming language and has "object-based" support. I
 
 The Jack Grammar is as follows: 
 
-![Image of Jack Lexical]( )
+![Image of Jack Lexical](images/jack-2.png)
 
-![Image of Jack Structure]( )
+![Image of Jack Structure](images/jack-3.png)
 
-![Image of Jack Statements]( )
+![Image of Jack Statements](images/jack-4.png)
 
-![Image of Jack Expressions]( )
+![Image of Jack Expressions](images/jack-5.png)
 
 ## VIRTUAL MACHINE LANGUAGE
 A VM program is a collection of one or more files with a `.vm` extension, each consisting of one or more  functions. From a compilation standpoint, these constructs correspond, respectively, to the notions of program, class, and method in an object-oriented language.
@@ -37,7 +37,7 @@ The language consists of four types of commands:
 - Program flow commands facilitate conditional and unconditional branching operations.
 - Function calling commands call functions and return from them.
 
-![Image of VM Lang Commands]( )
+![Image of VM Lang Commands](images/vm-1.png)
 
 Segments in the above image refer to memory segments. They are as follows:
 - **local, argument, this, that:** Mapped directly on the RAM, and its location is maintained by keeping its physical base address in a dedicated register (LCL, ARG, THIS, and THAT,
@@ -61,7 +61,7 @@ An assembly language file is composed of text lines, each representing either an
 
 **Predefined Symbols** - Any Hack assembly program is allowed to use the following predefined symbols.
 
-![Image of Predefined Symbols]( )
+![Image of Predefined Symbols](images/hack-asm-1.png)
 
 **Label Symbols** - The pseudo-command (Xxx) defines the symbol Xxx to refer to the instruction memory location holding the next command in the program. A label can be defined only once and can be used anywhere in the assembly program, even before the line in which it is defined.
 
@@ -72,9 +72,9 @@ Each line is a sequence of 16 ‘‘0’’ and ‘‘1’’ ASCII characters, 
 
 The Hack machine language consists of two instruction types called addressing instruction (A-instruction) and compute instruction (C-instruction). The instruction format is as follows.
 
-![Image of Instruction Format]( )
+![Image of Instruction format](images/hack-byte-1.png)
 
 The translation of each of the three fields comp, dest, jump to their binary forms is specified in the following three tables.
 
-![Image of Comp field table]( )
-![Image of Dest and Jump field tables]( )
+![Image of Comp field table](images/hack-byte-2.png)
+![Image of Dest and Jump field tables](images/hack-byte-3.png)
