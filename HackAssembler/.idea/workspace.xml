@@ -27,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
@@ -71,6 +71,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="178" y="100" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1596584721155" />
+    <state x="473" y="230" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596651909083">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="473" y="230" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.826@0.23.1440.826" timestamp="1596651909083" />
     <state width="1379" height="207" key="GridCell.Tab.0.bottom" timestamp="1596585118692">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -87,10 +91,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1379" height="207" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1596585118691" />
-    <state x="223" y="75" key="SettingsEditor" timestamp="1596584356856">
+    <state x="223" y="23" width="1024" height="826" key="SettingsEditor" timestamp="1596651914138">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="223" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1596584356856" />
+    <state x="223" y="23" width="1024" height="826" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1596651914138" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
