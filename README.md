@@ -40,16 +40,16 @@ The language consists of four types of commands:
 ![Image of VM Lang Commands]( )
 
 Segments in the above image refer to memory segments. They are as follows:
-- local, argument, this, that: Mapped directly on the RAM, and its location is maintained by keeping its physical base address in a dedicated register (LCL, ARG, THIS, and THAT,
+- **local, argument, this, that:** Mapped directly on the RAM, and its location is maintained by keeping its physical base address in a dedicated register (LCL, ARG, THIS, and THAT,
 respectively). 
-- pointer, temp: Mapped directly onto a fixed area in the RAM. The pointer segment is mapped on RAM  locations 3-4 (also called THIS and THAT) and the temp segment on locations 5-12 (also called R5, R6,..., R12).
-- constant: Truly virtual, as it does not occupy any physical space on the target architecture. Instead, the VM implementation handles any VM access to (constant i) by simply supplying the constant i.
-- static: Accessing static i within file Foo.vm should result in accessing the assembly variable Foo.i
+- **pointer, temp:** Mapped directly onto a fixed area in the RAM. The pointer segment is mapped on RAM  locations 3-4 (also called THIS and THAT) and the temp segment on locations 5-12 (also called R5, R6,..., R12).
+- **constant:** Truly virtual, as it does not occupy any physical space on the target architecture. Instead, the VM implementation handles any VM access to (constant i) by simply supplying the constant i.
+- **static:** Accessing static i within file Foo.vm should result in accessing the assembly variable Foo.i
 
 ## HACK ASSEMBLY LANGUAGE
 An assembly language file is composed of text lines, each representing either an instruction or a symbol declaration
-- Instruction: An A-instruction or a C-instruction
-- (Symbol): This pseudo-command binds the Symbol to the memory location into which the next command in the program will be stored. It is called ‘‘pseudo-command’’ since it generates no machine code.
+- **Instruction:** An A-instruction or a C-instruction
+- **(Symbol):** This pseudo-command binds the Symbol to the memory location into which the next command in the program will be stored. It is called ‘‘pseudo-command’’ since it generates no machine code.
 
 **Constants and Symbols** - Constants must be non-negative and are written in decimal notation. A user-defined symbol can be any sequence of letters, digits, underscore (_), dot (.), dollar sign ($), and colon (:) that does not begin with a digit. 
 
