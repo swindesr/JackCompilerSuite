@@ -11,20 +11,28 @@ In other words, when combined, these programs will work to compile a `.jack` fil
 
 ## HOW TO RUN
 #### All-in-one
-To run through the entire process in one command: use the TODO HERE
+CURRENTLY THE ALL-IN-ONE PROCESS IS INCOMPLETE
 
 #### Jack Compiler
-To compile `.jack` files to `.vm` files, navigate to the JackCompiler folder within the terminal. From there run the command: 
+The Jack Compiler will take as argument a folder containing `.jack` files and output compiled `.vm` files to the given input folder. To accomplish this, navigate to the JackCompiler directory within the terminal. From there run the command: 
 
 `java -jar JackCompiler.jar "FOLDER_NAME_HERE"`
 
 The folders "ConvertToBin", "ComplexArrays", "Pong" are included in the JackCompiler directory as test cases for demonstration.
 
 #### VM Translator
-To run through the VM TRANSLATOR: use the TODO HERE
+The VM Translator will take as argument a folder containing `.vm` files and output translated `.asm` files to the given input folder. To accomplish this, navigate to the VMTranslator directory within the terminal. From there run the command:
+
+`java -jar VMTranslator.jar "FOLDER_NAME_HERE"`
+
+The folders "StaticsTest" and "FibonacciElement" are included in the VMTranslator directory as test cases for demonstration.
 
 #### Hack Assembler
-To run through the HACK ASSEMBLER: use the TODO HERE
+The Hack Assembler will take as argument a file with extension `.asm` files and output an assembled `.hack` file to the same folder. To accomplish this, navigate to the HackAssembler directory within the terminal. From there run the command:
+
+`java -jar HackAssembler.jar "FILE_NAME_HERE_NO_EXTENSION"`
+
+The file "Max.asm" is included in the HackAssembler directory as a test case for demonstration.
 
 ### DISCLAIMER!
 The below language specifications are designed by Noam Nissan and Shimon Schocken. These descriptions are supplied through their free course at www.nand2tetris.org/course, and edited by me for quick reading here.
