@@ -32,6 +32,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="compiler" />
+      <recent name="tokenizer" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="JackCompiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JackCompiler" />
@@ -68,6 +74,18 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1596602376030" />
+    <state x="458" y="223" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1596643715773">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="458" y="223" key="#com.intellij.ide.util.PackageChooserDialog/0.23.1440.826@0.23.1440.826" timestamp="1596643715773" />
+    <state x="492" y="325" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596643551846">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="492" y="325" width="455" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.826@0.23.1440.826" timestamp="1596643551846" />
+    <state x="492" y="350" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1596645114324">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="492" y="350" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1440.826@0.23.1440.826" timestamp="1596645114324" />
     <state x="435" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590084708850">
       <screen x="0" y="23" width="1440" height="823" />
     </state>

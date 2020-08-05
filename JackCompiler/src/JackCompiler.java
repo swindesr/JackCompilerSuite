@@ -1,3 +1,6 @@
+import compiler.CompilationEngine;
+import tokenizer.Tokenizer;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,7 +13,7 @@ import java.util.stream.Stream;
 
 public class JackCompiler {
     public static void main(String[] args) {
-        String input = args[0];    //args[0];
+        String input = args[0];
         List<String> fileNames = new LinkedList<>();
 
         if (input.endsWith(".jack")) {

@@ -1,3 +1,5 @@
+package parser;
+
 import commands.Command;
 import commands.CommandFactory;
 import commands.CommandType;

@@ -1,3 +1,5 @@
+package tokenizer;
+
 public class Token {
     public TokenType type;
     public String value;

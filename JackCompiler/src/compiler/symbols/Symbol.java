@@ -1,3 +1,5 @@
+package compiler.symbols;
+
 public class Symbol {
     private String type;
     private String kind;

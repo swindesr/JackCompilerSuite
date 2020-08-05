@@ -1,3 +1,9 @@
+package compiler;
+
+import compiler.symbols.SymbolTable;
+import tokenizer.Token;
+import tokenizer.TokenType;
+
 import java.util.LinkedList;
 import java.util.List;
 
