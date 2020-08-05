@@ -10,9 +10,23 @@ In other words, when combined, these programs will work to compile a `.jack` fil
 ![Image of Overview](images/overview-1.png)
 
 ## HOW TO RUN
-Todo
+#### All-in-one
+To run through the entire process in one command: use the TODO HERE
 
-#### DISCLAIMER
+#### Jack Compiler
+To compile `.jack` files to `.vm` files, navigate to the JackCompiler folder within the terminal. From there run the command: 
+
+`java -jar JackCompiler.jar "FOLDER_NAME_HERE"`
+
+The folders "ConvertToBin", "ComplexArrays", "Pong" are included in the JackCompiler directory as test cases for demonstration.
+
+#### VM Translator
+To run through the VM TRANSLATOR: use the TODO HERE
+
+#### Hack Assembler
+To run through the HACK ASSEMBLER: use the TODO HERE
+
+### DISCLAIMER!
 The below language specifications are designed by Noam Nissan and Shimon Schocken. These descriptions are supplied through their free course at www.nand2tetris.org/course, and edited by me for quick reading here.
 
 ## JACK LANGUAGE
