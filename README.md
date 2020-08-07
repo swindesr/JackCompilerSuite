@@ -11,7 +11,7 @@ In other words, when combined, these programs will work to compile a `.jack` fil
 
 ## HOW TO RUN
 #### All-in-one
-CURRENTLY THE ALL-IN-ONE PROCESS IS INCOMPLETE
+The All-in-one program is currently a work in progress.
 
 #### Jack Compiler
 The Jack Compiler will take as argument a folder containing `.jack` files and output compiled `.vm` files to the given input folder. To accomplish this, navigate to the JackCompiler directory within the terminal. From there run the command: 
